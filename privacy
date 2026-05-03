@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kere - Privacy Policy</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; color: #222; }
+    h1, h2 { color: #0D47A1; }
+    a { color: #0D47A1; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+  <p><strong>Ultimo aggiornamento:</strong> maggio 2026</p>
+  <p>Questa Privacy Policy descrive come <strong>Siva Show</strong> ("noi") raccoglie, utilizza e protegge i dati personali degli utenti dell'app <strong>Kere</strong>.</p>
+
+  <h2>1. Dati raccolti</h2>
+  <p>Raccogliamo i seguenti dati:</p>
+  <ul>
+    <li>Indirizzo email (per registrazione e autenticazione)</li>
+    <li>Messaggi inviati e ricevuti (salvati su Firebase)</li>
+    <li>Foto e file multimediali condivisi in chat</li>
+    <li>Token dispositivo per notifiche push</li>
+    <li>Dati di utilizzo anonimi per migliorare il servizio</li>
+  </ul>
+
+  <h2>2. Come utilizziamo i dati</h2>
+  <ul>
+    <li>Per fornire il servizio di messaggistica</li>
+    <li>Per autenticare l'utente</li>
+    <li>Per inviare notifiche push</li>
+    <li>Per migliorare l'app tramite analisi anonime</li>
+  </ul>
+
+  <h2>3. Condivisione dei dati
