@@ -3,54 +3,129 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kere - Termini e Condizioni</title>
+  <title>Kere – Termini e Condizioni</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; color: #222; }
-    h1, h2 { color: #0D47A1; }
-    a { color: #0D47A1; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f5f7fa;
+      color: #1a1a2e;
+      line-height: 1.7;
+    }
+    header {
+      background: #0D47A1;
+      padding: 32px 24px;
+      text-align: center;
+    }
+    header h1 { color: white; font-size: 2rem; letter-spacing: 1px; }
+    header p { color: rgba(255,255,255,0.75); margin-top: 6px; font-size: 0.95rem; }
+    .container {
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 20px 60px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 36px 40px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    }
+    .updated {
+      display: inline-block;
+      background: #e8f0fe;
+      color: #0D47A1;
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 28px;
+    }
+    h2 {
+      color: #0D47A1;
+      font-size: 1.1rem;
+      margin: 32px 0 10px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #e8f0fe;
+    }
+    p { margin-bottom: 12px; font-size: 0.97rem; }
+    ul {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+    ul li {
+      margin-bottom: 6px;
+      font-size: 0.97rem;
+    }
+    a { color: #0D47A1; text-decoration: none; font-weight: 500; }
+    a:hover { text-decoration: underline; }
+    .back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 32px;
+      color: #0D47A1;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #888;
+      font-size: 0.82rem;
+    }
   </style>
 </head>
 <body>
-  <h1>Termini e Condizioni</h1>
-  <p><strong>Ultimo aggiornamento:</strong> maggio 2026</p>
-  <p>Utilizzando l'app <strong>Kere</strong> accetti i seguenti Termini e Condizioni redatti da <strong>Siva Show</strong>, Italia.</p>
+  <header>
+    <h1>Kere</h1>
+    <p>Termini e Condizioni</p>
+  </header>
 
-  <h2>1. Descrizione del servizio</h2>
-  <p>Kere è un'app di messaggistica privata che permette di inviare messaggi, foto e fare chiamate audio/video con altri utenti registrati.</p>
+  <div class="container">
+    <div class="card">
+      <span class="updated">Ultimo aggiornamento: maggio 2026</span>
 
-  <h2>2. Registrazione</h2>
-  <p>Per utilizzare Kere è necessario registrarsi con un indirizzo email valido e verificarlo. L'utente è responsabile della sicurezza delle proprie credenziali.</p>
+      <p>Utilizzando l'app <strong>Kere</strong> accetti i seguenti Termini e Condizioni redatti da <strong>Siva Show</strong>, Italia.</p>
 
-  <h2>3. Comportamento degli utenti</h2>
-  <p>È vietato utilizzare Kere per:</p>
-  <ul>
-    <li>Inviare contenuti illegali, offensivi o violenti</li>
-    <li>Molestare altri utenti</li>
-    <li>Diffondere spam o contenuti pubblicitari non autorizzati</li>
-    <li>Violare la privacy di altri utenti</li>
-    <li>Qualsiasi attività contraria alle leggi italiane ed europee</li>
-  </ul>
+      <h2>1. Descrizione del servizio</h2>
+      <p>Kere è un'app di messaggistica privata che permette di inviare messaggi, foto e fare chiamate audio/video con altri utenti registrati.</p>
 
-  <h2>4. Proprietà intellettuale</h2>
-  <p>L'app Kere, il suo design e il suo codice sono di proprietà di <strong>Siva Show</strong>. I contenuti inviati dagli utenti rimangono di proprietà degli utenti stessi.</p>
+      <h2>2. Registrazione</h2>
+      <p>Per utilizzare Kere è necessario registrarsi con un indirizzo email valido e verificarlo. L'utente è responsabile della sicurezza delle proprie credenziali.</p>
 
-  <h2>5. Limitazione di responsabilità</h2>
-  <p>Siva Show non è responsabile per contenuti inviati dagli utenti, interruzioni del servizio o perdita di dati dovuta a cause di forza maggiore.</p>
+      <h2>3. Comportamento degli utenti</h2>
+      <p>È vietato utilizzare Kere per:</p>
+      <ul>
+        <li>Inviare contenuti illegali, offensivi o violenti</li>
+        <li>Molestare altri utenti</li>
+        <li>Diffondere spam o contenuti pubblicitari non autorizzati</li>
+        <li>Violare la privacy di altri utenti</li>
+        <li>Qualsiasi attività contraria alle leggi italiane ed europee</li>
+      </ul>
 
-  <h2>6. Sospensione dell'account</h2>
-  <p>Ci riserviamo il diritto di sospendere o eliminare account che violano questi Termini senza preavviso.</p>
+      <h2>4. Proprietà intellettuale</h2>
+      <p>L'app Kere, il suo design e il suo codice sono di proprietà di <strong>Siva Show</strong>. I contenuti inviati dagli utenti rimangono di proprietà degli utenti stessi.</p>
 
-  <h2>7. Modifiche ai Termini</h2>
-  <p>Possiamo aggiornare questi Termini in qualsiasi momento. Gli utenti saranno notificati tramite l'app o via email.</p>
+      <h2>5. Limitazione di responsabilità</h2>
+      <p>Siva Show non è responsabile per contenuti inviati dagli utenti, interruzioni del servizio o perdita di dati dovuta a cause di forza maggiore.</p>
 
-  <h2>8. Legge applicabile</h2>
-  <p>Questi Termini sono regolati dalla legge italiana. Per qualsiasi controversia è competente il Foro di Milano.</p>
+      <h2>6. Sospensione dell'account</h2>
+      <p>Ci riserviamo il diritto di sospendere o eliminare account che violano questi Termini senza preavviso.</p>
 
-  <h2>9. Contatti</h2>
-  <p>Per qualsiasi domanda: <a href="mailto:support.kere@gmail.com">support.kere@gmail.com</a></p>
-  <p><strong>Siva Show</strong> — Italia</p>
+      <h2>7. Modifiche ai Termini</h2>
+      <p>Possiamo aggiornare questi Termini in qualsiasi momento. Gli utenti saranno notificati tramite l'app o via email.</p>
 
-  <br>
-  <a href="index.html" style="color:#0D47A1;">← Torna alla home</a>
+      <h2>8. Legge applicabile</h2>
+      <p>Questi Termini sono regolati dalla legge italiana. Per qualsiasi controversia è competente il Foro di Milano.</p>
+
+      <h2>9. Contatti</h2>
+      <p>Per qualsiasi domanda: <a href="mailto:support.kere@gmail.com">support.kere@gmail.com</a></p>
+      <p><strong>Siva Show</strong> — Italia</p>
+
+      <a class="back" href="index.html">← Torna alla home</a>
+    </div>
+  </div>
+
+  <footer>© 2026 Siva Show – Kere App</footer>
 </body>
 </html>
