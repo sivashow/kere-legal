@@ -3,54 +3,278 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kere - Termini e Condizioni</title>
+  <title>Kere – Termini e Condizioni / Terms and Conditions</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; color: #222; }
-    h1, h2 { color: #0D47A1; }
-    a { color: #0D47A1; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f5f7fa; color: #1a1a2e; line-height: 1.7;
+    }
+    header { background: #0D47A1; padding: 32px 24px; text-align: center; }
+    header h1 { color: white; font-size: 2rem; letter-spacing: 1px; }
+    header p { color: rgba(255,255,255,0.75); margin-top: 6px; font-size: 0.95rem; }
+    .lang-tabs {
+      display: flex; justify-content: center; gap: 12px;
+      padding: 20px 0; background: #0D47A1;
+    }
+    .lang-tab {
+      padding: 8px 24px; border-radius: 20px; cursor: pointer;
+      font-weight: 700; font-size: 0.9rem; border: 2px solid rgba(255,255,255,0.5);
+      color: white; background: transparent; transition: all 0.2s;
+    }
+    .lang-tab.active { background: white; color: #0D47A1; border-color: white; }
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
+    .container { max-width: 760px; margin: 40px auto; padding: 0 20px 60px; }
+    .card {
+      background: white; border-radius: 12px; padding: 36px 40px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.07); margin-bottom: 24px;
+    }
+    .updated {
+      display: inline-block; background: #e8f0fe; color: #0D47A1;
+      font-size: 0.82rem; font-weight: 600; padding: 4px 12px;
+      border-radius: 20px; margin-bottom: 28px;
+    }
+    .eula-badge {
+      display: inline-block; background: #0D47A1; color: white;
+      font-size: 0.78rem; font-weight: 700; padding: 4px 14px;
+      border-radius: 20px; margin-bottom: 20px; letter-spacing: 1px;
+    }
+    h2 {
+      color: #0D47A1; font-size: 1.1rem; margin: 32px 0 10px;
+      padding-bottom: 6px; border-bottom: 2px solid #e8f0fe;
+    }
+    h2:first-of-type { margin-top: 0; }
+    h3 { color: #0D47A1; font-size: 1rem; margin: 28px 0 8px; }
+    .section-divider {
+      border: none; border-top: 3px solid #0D47A1;
+      margin: 40px 0; opacity: 0.15;
+    }
+    p { margin-bottom: 12px; font-size: 0.97rem; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    ul li { margin-bottom: 6px; font-size: 0.97rem; }
+    a { color: #0D47A1; text-decoration: none; font-weight: 500; }
+    a:hover { text-decoration: underline; }
+    .back {
+      display: inline-flex; align-items: center; gap: 6px;
+      margin-top: 32px; color: #0D47A1; font-weight: 600; font-size: 0.95rem;
+    }
+    footer { text-align: center; padding: 20px; color: #888; font-size: 0.82rem; }
+    @media (max-width: 600px) {
+      .card { padding: 24px 20px; }
+    }
   </style>
 </head>
 <body>
-  <h1>Termini e Condizioni</h1>
-  <p><strong>Ultimo aggiornamento:</strong> maggio 2026</p>
-  <p>Utilizzando l'app <strong>Kere</strong> accetti i seguenti Termini e Condizioni redatti da <strong>Siva Show</strong>, Italia.</p>
 
-  <h2>1. Descrizione del servizio</h2>
-  <p>Kere è un'app di messaggistica privata che permette di inviare messaggi, foto e fare chiamate audio/video con altri utenti registrati.</p>
+<header>
+  <h1>Kere</h1>
+  <p>Termini e Condizioni · Terms and Conditions</p>
+</header>
 
-  <h2>2. Registrazione</h2>
-  <p>Per utilizzare Kere è necessario registrarsi con un indirizzo email valido e verificarlo. L'utente è responsabile della sicurezza delle proprie credenziali.</p>
+<div class="lang-tabs">
+  <button class="lang-tab active" onclick="switchLang('it')">🇮🇹 Italiano</button>
+  <button class="lang-tab" onclick="switchLang('en')">🇬🇧 English</button>
+</div>
 
-  <h2>3. Comportamento degli utenti</h2>
-  <p>È vietato utilizzare Kere per:</p>
-  <ul>
-    <li>Inviare contenuti illegali, offensivi o violenti</li>
-    <li>Molestare altri utenti</li>
-    <li>Diffondere spam o contenuti pubblicitari non autorizzati</li>
-    <li>Violare la privacy di altri utenti</li>
-    <li>Qualsiasi attività contraria alle leggi italiane ed europee</li>
-  </ul>
+<!-- ═══════════════════════════════════════════════════════ ITALIANO -->
+<div id="lang-it" class="lang-section active">
+  <div class="container">
+    <div class="card">
+      <span class="updated">Ultimo aggiornamento: maggio 2026</span>
 
-  <h2>4. Proprietà intellettuale</h2>
-  <p>L'app Kere, il suo design e il suo codice sono di proprietà di <strong>Siva Show</strong>. I contenuti inviati dagli utenti rimangono di proprietà degli utenti stessi.</p>
+      <p>Utilizzando l'app <strong>Kere</strong> accetti i seguenti Termini e Condizioni redatti da <strong>Siva Show</strong>, Italia.</p>
 
-  <h2>5. Limitazione di responsabilità</h2>
-  <p>Siva Show non è responsabile per contenuti inviati dagli utenti, interruzioni del servizio o perdita di dati dovuta a cause di forza maggiore.</p>
+      <h2>1. Descrizione del servizio</h2>
+      <p>Kere è un'app di messaggistica privata che permette di inviare messaggi, foto e fare chiamate audio/video con altri utenti registrati.</p>
 
-  <h2>6. Sospensione dell'account</h2>
-  <p>Ci riserviamo il diritto di sospendere o eliminare account che violano questi Termini senza preavviso.</p>
+      <h2>2. Registrazione</h2>
+      <p>Per utilizzare Kere è necessario registrarsi con un indirizzo email valido e verificarlo. L'utente è responsabile della sicurezza delle proprie credenziali.</p>
 
-  <h2>7. Modifiche ai Termini</h2>
-  <p>Possiamo aggiornare questi Termini in qualsiasi momento. Gli utenti saranno notificati tramite l'app o via email.</p>
+      <h2>3. Comportamento degli utenti</h2>
+      <p>È vietato utilizzare Kere per:</p>
+      <ul>
+        <li>Inviare contenuti illegali, offensivi o violenti</li>
+        <li>Molestare altri utenti</li>
+        <li>Diffondere spam o contenuti pubblicitari non autorizzati</li>
+        <li>Violare la privacy di altri utenti</li>
+        <li>Qualsiasi attività contraria alle leggi italiane ed europee</li>
+      </ul>
 
-  <h2>8. Legge applicabile</h2>
-  <p>Questi Termini sono regolati dalla legge italiana. Per qualsiasi controversia è competente il Foro di Milano.</p>
+      <h2>4. Proprietà intellettuale</h2>
+      <p>L'app Kere, il suo design e il suo codice sono di proprietà di <strong>Siva Show</strong>. I contenuti inviati dagli utenti rimangono di proprietà degli utenti stessi.</p>
 
-  <h2>9. Contatti</h2>
-  <p>Per qualsiasi domanda: <a href="mailto:support.kere@gmail.com">support.kere@gmail.com</a></p>
-  <p><strong>Siva Show</strong> — Italia</p>
+      <h2>5. Limitazione di responsabilità</h2>
+      <p>Siva Show non è responsabile per contenuti inviati dagli utenti, interruzioni del servizio o perdita di dati dovuta a cause di forza maggiore.</p>
 
-  <br>
-  <a href="index.html" style="color:#0D47A1;">← Torna alla home</a>
+      <h2>6. Sospensione dell'account</h2>
+      <p>Ci riserviamo il diritto di sospendere o eliminare account che violano questi Termini senza preavviso.</p>
+
+      <h2>7. Modifiche ai Termini</h2>
+      <p>Possiamo aggiornare questi Termini in qualsiasi momento. Gli utenti saranno notificati tramite l'app o via email.</p>
+
+      <h2>8. Legge applicabile</h2>
+      <p>Questi Termini sono regolati dalla legge italiana. Per qualsiasi controversia è competente il Foro di Milano.</p>
+
+      <h2>9. Contatti</h2>
+      <p>Per qualsiasi domanda: <a href="mailto:support.kere@gmail.com">support.kere@gmail.com</a></p>
+      <p><strong>Siva Show</strong> — Italia</p>
+
+      <hr class="section-divider">
+
+      <span class="eula-badge">EULA</span>
+      <h2 style="margin-top:8px;">Contratto di Licenza con l'Utente Finale</h2>
+      <p>Il presente Contratto di Licenza con l'Utente Finale ("EULA") è un accordo legale tra l'utente e <strong>Siva Show</strong> per l'utilizzo dell'applicazione mobile <strong>Kere</strong>, distribuita tramite l'App Store di Apple.</p>
+
+      <h3>1. Concessione della licenza</h3>
+      <p>Siva Show concede all'utente una licenza limitata, non esclusiva, non trasferibile e revocabile per scaricare, installare e utilizzare l'app su dispositivi Apple di proprietà o sotto il controllo dell'utente, secondo quanto consentito dalle Regole di utilizzo dell'App Store Apple.</p>
+
+      <h3>2. Restrizioni</h3>
+      <ul>
+        <li>L'utente non può copiare, modificare, distribuire, vendere o concedere in sublicenza l'app.</li>
+        <li>L'utente non può decompilare, fare reverse engineering o tentare di estrarre il codice sorgente dell'app.</li>
+        <li>L'utente non può rimuovere, oscurare o alterare avvisi di proprietà intellettuale presenti nell'app.</li>
+      </ul>
+
+      <h3>3. Proprietà intellettuale</h3>
+      <p>L'app e tutto il contenuto, le funzionalità e la tecnologia in essa inclusi sono di proprietà di <strong>Siva Show</strong> e sono protetti dalla normativa applicabile in materia di proprietà intellettuale.</p>
+
+      <h3>4. Contenuti dell'utente</h3>
+      <p>L'utente mantiene la titolarità dei contenuti che pubblica tramite l'app. Concede a Siva Show una licenza limitata per utilizzare tali contenuti esclusivamente ai fini dell'erogazione del servizio.</p>
+
+      <h3>5. Esclusione di garanzie</h3>
+      <p>L'app è fornita "così com'è", senza garanzie di alcun tipo, espresse o implicite. Siva Show non garantisce che l'app sia priva di errori, interruzioni o vulnerabilità.</p>
+
+      <h3>6. Limitazione di responsabilità</h3>
+      <p>Nei limiti consentiti dalla legge, Siva Show non è responsabile per danni diretti, indiretti, incidentali o consequenziali derivanti dall'uso o dall'impossibilità di usare l'app.</p>
+
+      <h3>7. Rescissione</h3>
+      <p>Questa licenza è valida fino alla sua rescissione. Siva Show può rescindere questa licenza in qualsiasi momento in caso di violazione dei presenti termini. Alla rescissione, l'utente deve cessare ogni utilizzo dell'app e cancellare tutte le copie installate.</p>
+
+      <h3>8. Apple come terza parte beneficiaria</h3>
+      <p>L'utente riconosce che Apple Inc. è una terza parte beneficiaria del presente EULA e che Apple ha il diritto di far valere il presente EULA nei confronti dell'utente. In caso di conflitto tra i presenti termini e le Regole di utilizzo dell'App Store Apple, prevarranno le Regole di utilizzo dell'App Store Apple.</p>
+
+      <h3>9. Responsabilità per reclami</h3>
+      <p>Siva Show, e non Apple, è responsabile dell'app e del suo contenuto. Eventuali reclami relativi all'app, inclusi reclami per responsabilità del prodotto, non conformità a requisiti legali o normativi, devono essere indirizzati a Siva Show all'indirizzo: <a href="mailto:support.kere@gmail.com">support.kere@gmail.com</a></p>
+
+      <h3>10. Conformità legale</h3>
+      <p>L'utente dichiara di non trovarsi in un paese soggetto a embargo del governo degli Stati Uniti o designato come paese che "sostiene il terrorismo", e di non figurare in alcun elenco governativo statunitense di soggetti vietati o soggetti a restrizioni.</p>
+
+      <h3>11. Legge applicabile</h3>
+      <p>Il presente EULA è regolato dalla legge italiana, salvo eventuali norme inderogabili di tutela del consumatore applicabili.</p>
+
+      <h3>12. Contatti</h3>
+      <p>Per qualsiasi domanda relativa al presente EULA: <a href="mailto:support.kere@gmail.com">support.kere@gmail.com</a></p>
+
+      <a class="back" href="index.html">← Torna alla home</a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ ENGLISH -->
+<div id="lang-en" class="lang-section">
+  <div class="container">
+    <div class="card">
+      <span class="updated">Last updated: May 2026</span>
+
+      <p>By using the <strong>Kere</strong> app you accept the following Terms and Conditions drawn up by <strong>Siva Show</strong>, Italy.</p>
+
+      <h2>1. Description of the service</h2>
+      <p>Kere is a private messaging app that allows users to send messages, photos, and make audio/video calls with other registered users.</p>
+
+      <h2>2. Registration</h2>
+      <p>To use Kere you must register with a valid email address and verify it. The user is responsible for the security of their credentials.</p>
+
+      <h2>3. User conduct</h2>
+      <p>It is prohibited to use Kere to:</p>
+      <ul>
+        <li>Send illegal, offensive, or violent content</li>
+        <li>Harass other users</li>
+        <li>Spread spam or unauthorised advertising content</li>
+        <li>Violate the privacy of other users</li>
+        <li>Any activity contrary to Italian and European laws</li>
+      </ul>
+
+      <h2>4. Intellectual property</h2>
+      <p>The Kere app, its design and its code are the property of <strong>Siva Show</strong>. Content sent by users remains the property of the users themselves.</p>
+
+      <h2>5. Limitation of liability</h2>
+      <p>Siva Show is not responsible for content sent by users, service interruptions, or data loss due to force majeure.</p>
+
+      <h2>6. Account suspension</h2>
+      <p>We reserve the right to suspend or delete accounts that violate these Terms without notice.</p>
+
+      <h2>7. Changes to the Terms</h2>
+      <p>We may update these Terms at any time. Users will be notified via the app or by email.</p>
+
+      <h2>8. Governing law</h2>
+      <p>These Terms are governed by Italian law. The Court of Milan has jurisdiction over any disputes.</p>
+
+      <h2>9. Contact</h2>
+      <p>For any questions: <a href="mailto:support.kere@gmail.com">support.kere@gmail.com</a></p>
+      <p><strong>Siva Show</strong> — Italy</p>
+
+      <hr class="section-divider">
+
+      <span class="eula-badge">EULA</span>
+      <h2 style="margin-top:8px;">End User License Agreement</h2>
+      <p>This End User License Agreement ("EULA") is a legal agreement between you and <strong>Siva Show</strong> for the use of the <strong>Kere</strong> mobile application, distributed via the Apple App Store.</p>
+
+      <h3>1. License grant</h3>
+      <p>Siva Show grants you a limited, non-exclusive, non-transferable, revocable license to download, install, and use the app on Apple devices owned or controlled by you, as permitted by the Apple App Store Usage Rules.</p>
+
+      <h3>2. Restrictions</h3>
+      <ul>
+        <li>You may not copy, modify, distribute, sell, or sublicense the app.</li>
+        <li>You may not decompile, reverse engineer, or attempt to extract the source code of the app.</li>
+        <li>You may not remove, obscure, or alter any intellectual property notices contained in the app.</li>
+      </ul>
+
+      <h3>3. Intellectual property</h3>
+      <p>The app and all content, features, and technology included therein are the property of <strong>Siva Show</strong> and are protected by applicable intellectual property law.</p>
+
+      <h3>4. User content</h3>
+      <p>You retain ownership of the content you publish through the app. You grant Siva Show a limited license to use such content solely for the purpose of providing the service.</p>
+
+      <h3>5. Disclaimer of warranties</h3>
+      <p>The app is provided "as is", without warranties of any kind, express or implied. Siva Show does not warrant that the app will be free from errors, interruptions, or vulnerabilities.</p>
+
+      <h3>6. Limitation of liability</h3>
+      <p>To the extent permitted by law, Siva Show is not liable for any direct, indirect, incidental, or consequential damages arising from the use of or inability to use the app.</p>
+
+      <h3>7. Termination</h3>
+      <p>This license is effective until terminated. Siva Show may terminate this license at any time in the event of a breach of these terms. Upon termination, you must cease all use of the app and delete all installed copies.</p>
+
+      <h3>8. Apple as third-party beneficiary</h3>
+      <p>You acknowledge that Apple Inc. is a third-party beneficiary of this EULA and that Apple has the right to enforce this EULA against you. In the event of any conflict between these terms and the Apple App Store Usage Rules, the Apple App Store Usage Rules shall prevail.</p>
+
+      <h3>9. Claims responsibility</h3>
+      <p>Siva Show, and not Apple, is responsible for the app and its content. Any claims relating to the app, including product liability claims or non-conformance with legal or regulatory requirements, must be directed to Siva Show at: <a href="mailto:support.kere@gmail.com">support.kere@gmail.com</a></p>
+
+      <h3>10. Legal compliance</h3>
+      <p>You represent that you are not located in a country subject to a U.S. government embargo, or that has been designated by the U.S. government as a "terrorist supporting" country, and that you are not listed on any U.S. government list of prohibited or restricted parties.</p>
+
+      <h3>11. Governing law</h3>
+      <p>This EULA is governed by Italian law, subject to any mandatory consumer protection provisions that may apply.</p>
+
+      <h3>12. Contact</h3>
+      <p>For any questions regarding this EULA: <a href="mailto:support.kere@gmail.com">support.kere@gmail.com</a></p>
+
+      <a class="back" href="index.html">← Back to home</a>
+    </div>
+  </div>
+</div>
+
+<footer>© 2026 Siva Show – Kere App</footer>
+
+<script>
+  function switchLang(lang) {
+    document.querySelectorAll('.lang-section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.lang-tab').forEach(t => t.classList.remove('active'));
+    document.getElementById('lang-' + lang).classList.add('active');
+    event.target.classList.add('active');
+  }
+</script>
+
 </body>
 </html>
